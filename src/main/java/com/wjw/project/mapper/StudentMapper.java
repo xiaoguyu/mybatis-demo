@@ -3,6 +3,8 @@ package com.wjw.project.mapper;
 import com.wjw.project.entity.Student;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 /**
  * @author wjw
  * @description: 学生dao
@@ -11,6 +13,6 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface StudentMapper {
 
-    Student selectByName(@Param("name") String name);
+    List<Student> selectByName(@Param("name") String name);
 
 }
